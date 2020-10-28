@@ -1,0 +1,4 @@
+{
+    "http.proxy": "http://192.168.40.1:3128",
+    "http.proxyAuthorization": "igor:ujhufp",
+}
