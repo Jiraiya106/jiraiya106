@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF=8">
+            <title>Урок 9</title>
+        </head>
+        <body>
+            <div>
+                <form>
+                    <fieldset>
+                        <legend>Параметры автомобиля</legend>
+                        <p>
+                            Марка автомобиля:
+                            <input type="text">
+                        </p>
+                        <br>
+                        <p>
+                            <label> Объём двигателя, см<sup>3</sup>:
+                                <input type="text" placeholder="1900">
+                            </label>
+                        </p>
+                        <br>
+                        <p>
+                            <label id="region">Область:</label>
+                            <select>
+                                <option value="Brest">Брест</option>
+                                <option value="Vitebsk">Витебск</option>
+                                <option value="Minsk">Минск</option>
+                            </select>
+                        </p>
+                        <br>
+                        <p>
+                            Тип КПП:
+                            <p><input type="radio" name="KPP">Механика</p>
+                            <p><input type="radio" name="KPP">Автомат</p>
+                        </p>
+                        <br>
+                        <p>
+                            <label>Двигатель:</label>
+                            <label> <p><input type="checkbox">Электро</p></label>
+                            <label> <p><input type="checkbox">Дизель</p></label>
+                            <label><p><input type="checkbox">Бензин</p></label>
+                            <label><p><input type="checkbox">Пропан-бутан</p></label>
+                            <label><p><input type="checkbox">Метан</p></label>
+                            
+                        </p>
+                        <br>
+                        <p>
+                            Описание:
+                            <p>
+                                <textarea name="" cols="50" row="10" readonly></textarea>
+                            </p>
+                        </p>
+                        <input type="reset" value="Очистить">
+                        <input type="submit" value="Отправить">
+                    </fieldset>
+                </form>
+            </div>
+        </body>
+    </html>
