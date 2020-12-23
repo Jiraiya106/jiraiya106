@@ -1,0 +1,26 @@
+p {
+    width: 500px;
+    padding: 1em;
+}
+
+#p_1 {
+    background-color: orange;
+    text-align: left;
+}
+
+#p_2 {
+    background-color: violet;
+    text-align: right;
+}
+
+.first {
+    text-decoration:underline ;
+}
+
+.second {
+    text-decoration:underline ;
+}
+
+.third {
+    text-decoration:underline ;
+}
