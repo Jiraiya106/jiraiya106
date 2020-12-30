@@ -1,0 +1,11 @@
+ol {
+    font-weight: 700;
+}
+
+ol li > ol {
+    font-weight: normal;
+}
+
+ol li ol li > ul{
+    font-weight: 700;
+}
