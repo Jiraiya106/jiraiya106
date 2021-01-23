@@ -43,5 +43,16 @@
 }
 
 .clearfix:nth-child(6n) {
+    transform: translate(-10px, -30px);
+    transform: rotate(15deg);
+}
 
+.clearfix:nth-child(9n) {
+    transform: translate(-10px, -30px);
+    transform: rotate(22deg);
+}
+
+img {
+    box-shadow: 15px 15px 20px rgba(0,0,0,0.6);
+    
 }
