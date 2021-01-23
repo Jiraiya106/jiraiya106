@@ -1,0 +1,47 @@
+.container {
+    max-width: 980px;
+    padding: 60px;
+    margin: 0 auto;
+}
+
+.clearfix  {
+    position: relative;
+    margin-top: 160px;
+    padding: 10px;
+    text-align: center;
+}
+
+.clearfix img {
+    position: relative;
+    width: 172px;
+    background-color: white;
+    box-shadow: 5px black;
+    float: right;
+    margin-top: -100px;
+    padding: 10px;
+    z-index: 2; 
+}
+
+.clearfix:nth-child(even) {
+    transform: translate(10px, 0px);
+    transform: rotate(8deg);
+}
+
+.clearfix:nth-child(odd) {
+    transform: translate(40px, -30px);
+    transform: rotate(-5deg)
+}
+
+.clearfix:nth-child(3n) {
+    transform: translate(7px, -40px);
+    transform: rotate(15deg);
+}
+
+.clearfix:nth-child(5n){
+    left: 5px;
+    top: 20px;
+}
+
+.clearfix:nth-child(6n) {
+
+}
