@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Урок 9</title>
+        </head>
+        <body>
+            <div>
+                <form name="registred-name" action="registred.php" enctype="text/plain">
+                    <fieldset>
+                        <legend>Регистрационные формы пользователя</legend>
+                        <div>
+                            <p>Имя:<input type="text" placeholder="Имя"></p>
+                            <label for="old">Укажите возраст:
+                                <input type="text" list="old">
+                                <datalist id="old">
+                                    <option value="10-15">
+                                    <option value="15-20">
+                                    <option value="20-30">
+                                    <option value="30-40">
+                                </datalist>
+                            </label>
+                            <p>Укажите свой пол:
+                                <label>Мужской<input type="radio" name="radio"></label>
+                                <label>Женский<input type="radio" name="radio"></label>
+                                
+                            </p>
+                            <label>Укажите страну проживания:</label>
+                                <select size="1" name="country" id="country">
+                                    <option value="Belarus">Беларусь</option>
+                                    <option value="RF">Российская Федерация</option>
+                                    <option value="other">Другое</option>
+                                </select>
+                            <p>
+                                Владение языками:
+                                <label><input type="checkbox">русский</label>
+                                <label><input type="checkbox">белорусский</label>
+                                <label><input type="checkbox">английский</label>
+                                
+                            </p>
+                            <p>Фото 
+                                <input type="hidden" value="скрытое поле">
+                                <input type="file" accept=".jpg, .png" multiple>
+                            </p>
+                            <p>
+                                Введите логин:
+                                <input type="text" placeholder="Логин">
+                            </p>
+                            <p>
+                                Введите пароль:
+                                <input type="password" placeholder="Пароль" name="password" required>
+                            </p>
+                            <p>
+                                Повторите пароль:
+                                <input type="password" placeholder="Повторите пароль" name="password" required>
+                            </p>
+                        </div>
+                    </fieldset>
+                    <input type="reset" value="Сброс">
+                    <input type="submit" value="Отправить">
+                </form>
+            </div>
+        </body>
+    </html>
