@@ -52,7 +52,17 @@
     transform: rotate(22deg);
 }
 
-img {
+img:hover {
     box-shadow: 15px 15px 20px rgba(0,0,0,0.6);
-    
+    transform: rotate(180deg);
+    transform: scale(1.5,1.5);
+    z-index: 10;    
+}
+
+img {
+    transition: all 0.4s ease-in 0s;
+}
+
+.clear {
+    clear:left, right;
 }
