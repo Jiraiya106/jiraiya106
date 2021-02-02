@@ -1,8 +1,5 @@
-body 
-{
+body,div,p,h1 {
   margin: 0;
   padding: 0;
-  line-height: 1;
-  color: black;
-  background: white;
-}
+  box-sizing: border-box;
+  }
