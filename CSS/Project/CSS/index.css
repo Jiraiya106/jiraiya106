@@ -1,0 +1,83 @@
+.wrapper {
+    max-width: 1920;
+    height: 740;
+    left: 0px;
+    top: 0px;
+    background: linear-gradient(0deg, rgba(64, 65, 73, 0.9), rgba(64, 65, 73, 0.9)), url(photo-1509275698723-ae804786a334.jpg), #404149;
+}
+
+.vectordown {
+    position: absolute;
+    left: 21.09%;
+    right: 76.79%;
+    top: 0.61%;
+    bottom: 98.75%;
+}
+
+.vecorup {
+    position: absolute;
+    left: 22.1%;
+    right: 75.78%;
+    top: 0.31%;
+    bottom: 99.05%;
+}
+
+.box {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 1465px;
+    top: 30px;
+    background: #F7654A;   
+}
+
+.box img {
+    
+    position: absolute;
+    width: 21px;
+    height: 28px;
+    left: 14px;
+    top: 11px;
+    
+    /*font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    height: 28px;*/
+}
+.h1 {
+    position: absolute;
+    width: 734px;
+    padding: 10px;
+    left: 593px;
+    top: 192px;
+}
+
+.h1 p {
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 95px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF
+}
+
+.text {
+    position: absolute;
+    width: 734;
+    padding: 10px;
+    left: 593px;
+    top: 398;
+    font-family: Oswald sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
