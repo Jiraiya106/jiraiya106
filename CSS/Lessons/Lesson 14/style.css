@@ -1,0 +1,25 @@
+body, div, p {
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+} 
+
+body {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 300px;
+    background: url(img/1420.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.top-menu {
+    width:100%;
+    background: rgb(55, 74, );
+    color: #fff;
+    text-align: center;
+
+}
