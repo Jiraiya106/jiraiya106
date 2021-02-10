@@ -621,6 +621,10 @@ body {
     display: none;
   }
 
+  .portfolio img:nth-child(odd) {
+    display: none;
+  }
+  
   .portfolio {
     justify-items: center;
   }
@@ -650,4 +654,45 @@ body {
   .reviews .reviews_group .reviews_group_all {
     margin-right: 0;
   }
+
+  .project .textprojects .project_arena_group {
+    padding-bottom: 50px;
+  }
+
+  .services .services_text_and_group {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .services .services_text_and_group .services_items_group {
+    padding: 0;
+  }
+
+  .question_group {
+    margin: 25px auto;
+  }
+
+  .partners {
+    padding: 50px 0;
+  }
+
+  .reviews {
+    padding: 25px 0;
+  }
+
+  .reviews .reviews_group .reviews_group_all .reviews_group_img {
+    padding: 40px 15px 19px 15px;
+  }
+
+ .reviews .reviews_group .reviews_group_all .reviews_group_name {
+  margin-top: 35px;
+ }
+ 
+ .contacts {
+  margin: 25px auto;
+ }
+
+ .contacts .contacts_text {
+  margin-bottom: 30px;
+ }
 }
