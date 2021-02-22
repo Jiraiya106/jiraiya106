@@ -22,6 +22,6 @@
     let $7 = [1,5,7,12,3,'зн;ачение'];
     let $8 = {'Вася':'Имя'};
     let $9 = function() {};
-    console.log(typeof $1, $2,$3,$4,$5,$6,$7,$8,$9);
+    console.log(typeof $1,$2,$3,$4,$5,$6,$7,$8,$9);
     console.log(typeof $2);
 }
