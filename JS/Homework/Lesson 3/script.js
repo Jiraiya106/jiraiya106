@@ -22,3 +22,39 @@
     let hour = prompt("Введите час"), minute = prompt("Введите минуты"), sec = prompt("Введите секунды");
     alert(`${hour}:${minute}:${sec}`);
 }
+{
+   let NumbOfPicA = (1024-40)/4;
+   alert(NumbOfPicA);
+}
+{   
+   let LenghtOfThePicture = +prompt("Введите ширину каждого изображения");
+   let NumberOfPictureAll = +prompt("Введите сколько  изображений в галерее");
+   let NumbetOfPictureInLine = Math.trunc(1024/(LenghtOfThePicture+10));
+   let NumberOfRows = Math.ceil(NumberOfPictureAll/NumbetOfPictureInLine);
+   let NumberInTheLastRow = NumberOfPictureAll%NumbetOfPictureInLine;
+   alert(`Количество изображений в каждом ряду =${NumbetOfPictureInLine}, Количество полных рядов = ${NumberOfRows},  Количество изображений в последнем ряду= ${NumberInTheLastRow}`);
+}
+
+{
+    let  a=0, b=null, c=undefined, d="Привет";
+    let hello = a || b || c || d;
+    alert(`${hello}`);
+}
+
+{
+    let  a=0, b=null, c=undefined, d="Привет";
+    let hello = a && b && c && d;
+    alert(`${hello}`);
+}
+
+{
+    let  a=0, b=null, c=undefined, d="Привет";
+    let hello = a <= b == c != d;
+    alert(`${hello}`);
+}
+
+{
+    let  a=0, b=null, c=undefined, d="Привет";
+    let hello = a = b === c == d;
+    alert(`${hello}`);
+}
