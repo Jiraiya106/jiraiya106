@@ -1,4 +1,5 @@
-// 'use strict'
+ 'use strict'
+
 // {
 //     let num = 1;
 //     num += 12;      
