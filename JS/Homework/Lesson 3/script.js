@@ -37,7 +37,10 @@
 // }
 
 // {
-//     let  a=0, b=null, c=undefined, d="Привет";
+//     let  a = 0; 
+        // let b = null;
+        // let c = undefined;
+        // let d = "Привет";
 //     let hello = a || b || c || d;
 //     alert(`${hello}`);
 // }

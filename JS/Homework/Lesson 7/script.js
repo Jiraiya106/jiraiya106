@@ -45,7 +45,7 @@
 
     SumExp(a, b);
 
-    let SumArrow = () => console.log(a + b);
+    let SumArrow = (a,b) => console.log(a + b);
 
     SumArrow(a, b);
 }
@@ -60,7 +60,7 @@
 {
     let IntArg = +prompt("Введите факториал")
 
-    function FactDeg() {
+    function FactDeg( ) {
         let IntermeiateResult = 1;
         for (let i = 2; i <= IntArg; i++) {
             IntermeiateResult *= i;

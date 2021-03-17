@@ -6,6 +6,7 @@
     let Number = +prompt("Введите номер месяца?");
 
     switch(Number){
+        case 12:
         case 1: 
         case 2: console.log("Зима"); break;
         case 3:
@@ -17,7 +18,6 @@
         case 9:
         case 10:
         case 11: console.log("Осень"); break;
-        case 12: console.log("Зима"); break;
         default: console.log("ЧТО ЗА ХРЕНЬ?????");
     }
 }

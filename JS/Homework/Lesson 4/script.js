@@ -19,14 +19,14 @@
 // а затем выводит, является число положительным, отрицательным или равным 0 
 
 {
-    let NoName = +prompt("Введите число!!!!");
+    let noName = +prompt("Введите число!!!!");
     
-    if (NoName > 0) {
+    if (noName > 0) {
             console.log ("+");
-        } else if (NoName < 0) {
+        } else if (noName < 0) {
             console.log ("-");
         } else {
-            if (NoName === 0) {
+            if (noName === 0) {
                 console.log ("0");
             } else
             console.log ("Что за хренЬ???");
