@@ -56,6 +56,6 @@
 
 // {
 //     let  a=0, b=null, c=undefined, d="Привет";
-//     let hello = a = b === c == d;
+//     let hello == a == b == c == d;
 //     alert(`${hello}`);
 // }

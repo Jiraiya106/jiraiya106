@@ -57,5 +57,60 @@
 // меньше данного, и его самого. 
 // Например, 4! = 1*2*3*4.
 
+{
+    let IntArg = +prompt("Введите факториал")
+
+    function FactDeg() {
+        let IntermeiateResult = 1;
+        for (let i = 2; i <= IntArg; i++) {
+            IntermeiateResult *= i;
+        }
+        return IntermeiateResult;
+    }
+
+    console.log( FactDeg(IntArg) );
+
+        let FactExp = function() {
+        let IntermeiateResult = 1;
+        for (let i = 2; i <= IntArg; i++) {
+            IntermeiateResult *= i;
+        }
+        return IntermeiateResult;
+        }
+
+       console.log( FactExp(IntArg) );
+
+            let FactArrow = () => {
+                let IntermeiateResult = 1;
+                for (let i = 2; i <= IntArg; i++) {
+                    IntermeiateResult *= i;
+                }
+                return IntermeiateResult;
+            }
+
+       console.log( FactArrow(IntArg) )
+            
+}
+
+// Задание 4    
+// Используя Функции-«колбэки», создайте  функцию, 
+// которая в качестве аргумента получает два числа:  
+// стоимость покупки и сумму внесенную  в кассу. 
+// А возвращает сумму сдачи с покупки или  сообщение “ Недостаточная сумма для оплаты ”
+
+{
+    let ParchaseAmount = +prompt("Введите сумму покупки");
+    let PaymentAmount = +prompt("Введите сумму внесенную  в кассу");
+    let sum = PaymentAmount - ParchaseAmount;
+    
+    function Payment() {
+        
+        if ( sum >= 0)  Good(sum);
+        else Bad ();
+    }
+    function Good(sum) {return console.log(`${sum}`)}
+    function Bad(sum) {return console.log("Недостаточная сумма для оплаты")}
+    console.log( Payment(sum));
+}
 
 
