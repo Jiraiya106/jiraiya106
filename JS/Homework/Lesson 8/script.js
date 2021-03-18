@@ -84,10 +84,50 @@
 
     const newSalary = {...salary}
 
-    let summ = 0;
-    for (let key in salary) {
-        summ++;
+   
+    let summKey = (z) => {
+         let summ = 0
+        for (let key in z) {
+            summ++;
+        }
+        return summ
+    }
+    function sumkey (x) {
+       let summ3 = 0;
+        for (let key in x){
+            summ3 += salary[key]
+        }
+        return summ3;
     }
 
-    
+    salary.sumkey = sumkey(salary)/summKey(salary);
+
+    // console.log(salary)
+    let summ = 0;
+   for (let key in salary) {
+       
+       if (salary[key] < salary.sumkey){
+           summ ++
+       }
+   } 
+    console.log(summ);
+
+// Задание 3*(По желанию)
+// Используя результат выполнения предыдущего задания, 
+// определите у кого из работников самая большая зарплата. 
+// Выведите фамилию этого работника и размер его зарплаты
+
+    // let biggest = (y) => {
+        let bigMoney = 0;
+        let keyBigMoney = null;
+        for (let key in salary) {
+            if(salary[key] > bigMoney) {
+                bigMoney = salary[key];
+                keyBigMoney = key;
+            } 
+        }
+        // return bigMoney;
+    // }
+    console.log(`${keyBigMoney}: ${bigMoney}`);
+    // console.log( biggest(salary) );
 }

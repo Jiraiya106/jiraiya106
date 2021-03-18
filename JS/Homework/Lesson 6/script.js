@@ -5,8 +5,8 @@
 {
     let userAge = +prompt("Введите возраст");
 
-    function showWelcome (){
-        if (userAge > 16) {
+    function showWelcome (a){
+        if (a > 16) {
             return console.log("добро пожаловать")
         } else return console.log("вы еще молоды")
     }
@@ -23,11 +23,11 @@
 {
     let Number = +prompt("Введите число");
 
-    function showNumber () {
-        if (Number >= 10) {
-            return console.log(Math.pow(Number,2))
-        } else if (Number == 9 || Number == 8){
-            switch (Number){
+    function showNumber (a) {
+        if (a >= 10) {
+            return console.log(Math.pow(a,2))
+        } else if (a == 9 || a == 8){
+            switch (a){
                 case 8: return console.log(7); break;
                 case 9: return console.log(8); break;
                 default: return console.log ("ERROR")
@@ -51,25 +51,25 @@
     let b = +prompt("Введите число");
     let c = +prompt("Введите число");
 
-    function calcMin() {
-        if (a > b) {
-            if(b > c) {
-                console.log(`${c}`);
-            } else if (b === c) {
-                console.log(`${c}`);
+    function calcMin(x,y,z) {
+        if (x > y) {
+            if(y > z) {
+                console.log(`${z}`);
+            } else if (y === z) {
+                console.log(`${z}`);
             } else {
-                console.log(`${b}`);
+                console.log(`${y}`);
             }
-        } else if (a > c){
-            if (a === c) {
-                console.log(`${c}`);
+        } else if (x > z){
+            if (x === z) {
+                console.log(`${z}`);
             } else {
-                console.log(`${c}`);
+                console.log(`${z}`);
             }    
         } else {
-            if (a < c){
-                console.log(`${a}`);
-            } else if (a == b == c) 
+            if (x < z){
+                console.log(`${x}`);
+            } else if (x == y == z) 
                 console.log("Они равны");
             else {
                 console.log("Что за хрень?");
@@ -88,8 +88,8 @@
     let Number = +prompt("Введите число");
     let Power = +prompt("Введите степень");
 
-    function showPower () {
-       return console.log(Math.pow(Number,Power));
+    function showPower (a,b) {
+       return console.log(Math.pow(a,b));
     }
 
     showPower(Number, Power);
@@ -104,8 +104,8 @@
 {
     let Radius = +prompt("Введите радиус")
 
-    function circle() {
-        let Lenght = 2*Math.PI*Radius
+    function circle(a) {
+        let Lenght = 2*Math.PI*a
 
         return Lenght
     }
@@ -122,11 +122,11 @@
     let Number1 = +prompt("Введите первое число");
     let Number2 = +prompt("Введите второе число");
 
-    function getIncompletePrivate (){
-        let result = Number1%Number2
+    function getIncompletePrivate (a,b){
+        let result = a%b
 
         return console.log(result.toString().length),
-        console.log(Number1%Number2);
+        console.log(a%b);
     }
     
     getIncompletePrivate(Number1, Number2);

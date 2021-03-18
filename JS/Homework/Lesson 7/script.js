@@ -7,19 +7,19 @@
 {
     let Deg = +prompt("Введите градусы");
 
-    function showRadDec( ) { 
-        return console.log(Deg*3.14/180);
+    function showRadDec(a) { 
+        return console.log(a*3.14/180);
     }
 
     showRadDec(Deg);
 
-    let showRadExp = function() {
-        return console.log(Deg*3.14/180);
+    let showRadExp = function(a) {
+        return console.log(a*3.14/180);
     };
 
     showRadExp(Deg)
     
-   let showRadArrow = () => console.log(Deg*3.14/180);
+   let showRadArrow = (a) => console.log(a*3.14/180);
 
    showRadArrow(Deg);
 }
@@ -33,19 +33,19 @@
     let a = +prompt("Введите число");
     let b = +prompt("Введите число");
 
-    function SumDec() {
-        return console.log(a + b);
+    function SumDec(x,z) {
+        return console.log(x + z);
     }
 
     SumDec(a, b);
 
-    let SumExp = function() {
-        return console.log(a + b);
+    let SumExp = function(x,z) {
+        return console.log(x + z);
     };
 
     SumExp(a, b);
 
-    let SumArrow = (a,b) => console.log(a + b);
+    let SumArrow = (x,z) => console.log(x + z);
 
     SumArrow(a, b);
 }
@@ -60,9 +60,9 @@
 {
     let IntArg = +prompt("Введите факториал")
 
-    function FactDeg( ) {
+    function FactDeg(a) {
         let IntermeiateResult = 1;
-        for (let i = 2; i <= IntArg; i++) {
+        for (let i = 2; i <= a; i++) {
             IntermeiateResult *= i;
         }
         return IntermeiateResult;
@@ -70,9 +70,9 @@
 
     console.log( FactDeg(IntArg) );
 
-        let FactExp = function() {
+        let FactExp = function(x) {
         let IntermeiateResult = 1;
-        for (let i = 2; i <= IntArg; i++) {
+        for (let i = 2; i <= x; i++) {
             IntermeiateResult *= i;
         }
         return IntermeiateResult;
@@ -80,9 +80,9 @@
 
        console.log( FactExp(IntArg) );
 
-            let FactArrow = () => {
+            let FactArrow = (z) => {
                 let IntermeiateResult = 1;
-                for (let i = 2; i <= IntArg; i++) {
+                for (let i = 2; i <= z; i++) {
                     IntermeiateResult *= i;
                 }
                 return IntermeiateResult;
@@ -103,13 +103,13 @@
     let PaymentAmount = +prompt("Введите сумму внесенную  в кассу");
     let sum = PaymentAmount - ParchaseAmount;
     
-    function Payment() {
+    function Payment(z) {
         
-        if ( sum >= 0)  Good(sum);
+        if ( z >= 0)  Good(z);
         else Bad ();
     }
-    function Good(sum) {return console.log(`${sum}`)}
-    function Bad(sum) {return console.log("Недостаточная сумма для оплаты")}
+    function Good(x) {return console.log(`${x}`)}
+    function Bad(y) {return console.log("Недостаточная сумма для оплаты")}
     console.log( Payment(sum));
 }
 
