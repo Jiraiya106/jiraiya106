@@ -10,12 +10,12 @@
 //     function Square (x,y) {
 //         this.width = x;
 //         this.height = y;
-//         this.area = () => console.log( x * y );
-//         this.perimetr = () => console.log( 2 * (x + y) ); 
+//         this.area = () => console.log( this.width * this.height );
+//         this.perimetr = () => console.log( 2 * (this.width + this.height) ); 
 //     }
         // let a = +prompt("Введите ширину");
         // let b = +prompt("Введите высоту")
-//     let square = new Square(2,3);
+//     let square = new Square();
 
 //     square.area(a,b);
 //     square.perimetr(a,b);
@@ -25,13 +25,13 @@
 // Напишите функцию - конструктор, которая создает объект, 
 // свойствами которого являются  марка автомобиля, объем двигателя и год выпуска.
 
-{
-    function Car(x,z,y) {
-        this.model = x;
-        this.volume = z;
-        this.year = y;
-    }
-}
+// {
+//     function Car(x,z,y) {
+//         this.model = x;
+//         this.volume = z;
+//         this.year = y;
+//     }
+// }
 
 // Задание 3 
 
@@ -49,16 +49,22 @@
     function Circle(x,z) {
         this.radiusCircle = x;
         this.degCircle = z;
-        this.areaSectorCircle = (x,z) => Math.PI * Math.pow(x,2) * z / 360;
+        this.areaSectorCircle = () => Math.PI * Math.pow(this.radiusCircle,2) * this.degCircle / 360;
+    }
+
+    let circle2 = {
+        radiusCircle: 2,
+        degCircle: 3,
     }
 
     let radius = +prompt("Введите радиус");
     let deg = +prompt("Введите градусную меру");
     
-    let circle1 = new Circle();
+    let circle1 = new Circle(radius, deg);
 
-    console.log(circle1.areaSectorCircle(radius,deg));
-
+    console.log(circle1.areaSectorCircle());
+    console.log(circle1.areaSectorCircle.call(circle2));
+    
 }
 
 // Задание 4
@@ -84,12 +90,10 @@
 
     salary.medium = () => {
         let summ = 0;
-        for(let [key] in salary) {
-            summ += key;
-        }
         let number = 0;
         for(let key in salary) {
-            number++
+            summ += salary[key];
+            number++;
         }
         return summ/number;
     }
