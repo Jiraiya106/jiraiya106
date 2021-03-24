@@ -2,8 +2,8 @@
 // Написать функцию, которая принимает в качестве аргумента диагональ монитора в дюймах 
 // и выводит результат  в сантиметрах с двумя знаками после запятой. (1дюйм=2,54 см).
 
-{
-    let inch = +prompt('Введите размер в дюймах');
+{t
+    const inch = +prompt('Введите размер в дюймах');
     
     let santimm = (x) => Math.floor(((x *2.54) * 100)) / 100;
 
@@ -15,7 +15,7 @@
 // вопросительным, восклицательным или повествовательным. 
 
 {
-    let sentence = prompt("Введите предложение");
+    const sentence = prompt("Введите предложение");
 
     let howSentence = (x) => {
         switch(true) {
@@ -34,11 +34,11 @@
 // (Все слова разделены пробелами)
 
 {
-    let sentence = prompt("Введите предложение");
+    const sentence = prompt("Введите предложение");
     let word = 1;
 
     for(let char of sentence){
-        if (char == " " && sentence.endsWith(" ") != true){
+        if (char == " " && !sentence.endsWith(" ")){
             word++
         } 
     }
@@ -53,7 +53,7 @@
 
 {
     // №1
-    let cashstring = prompt("Введите валюту");
+    const cashstring = prompt("Введите валюту");
 
     let cash = parseFloat(cashstring);
 
@@ -85,20 +85,15 @@
 
 
 {
-    let num = prompt("Введите E-mail")
+    const num = prompt("Введите E-mail")
 
     function validateEmail(email) {
         const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         return re.test(String(email).toLowerCase());
     }
 
-    if ( validateEmail(num) == true){
+    if ( validateEmail(num) ){
         let numberChar = num.indexOf("@");
-        // for(let char of num){
-        //     if (char == "@"){
-        //         break;
-        //     } else numberChar ++
-        // } 
         console.log(num.slice(numberChar + 1));
     } else console.log("Адрес электронной почты имеет некорректный формат");
 }
@@ -109,7 +104,7 @@
 // И выводить true либо false.
 
 {
-    let palindrom = prompt("Введите слово")
+    const palindrom = prompt("Введите слово")
     
     function fastestIsPalindrome(str) {
         var len = Math.floor(str.length / 2);
