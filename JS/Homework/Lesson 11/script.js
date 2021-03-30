@@ -117,10 +117,10 @@ function func2() {
     console.log(arr);
 
     let compositionItem = arr.reduce( (previousValue, item) => 
-        {previousValue *= item},1);
+        previousValue *= item,1);
     console.log(compositionItem);
    
-    let averageArray = arr.reduce ( (sum, item) => {sum + item},1);
+    let averageArray = arr.reduce ( (sum, item) => sum + item,1);
     console.log( averageArray/arr.length)
 }
 
