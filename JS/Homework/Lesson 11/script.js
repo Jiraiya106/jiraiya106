@@ -1,4 +1,4 @@
-// "use strict"
+"use strict"
 const button1El = document.getElementById("1");
 const button2El = document.getElementById("2");
 const button3El = document.getElementById("3");
