@@ -2,10 +2,12 @@
 const button1El = document.getElementById("1");
 const button2El = document.getElementById("2");
 const button3El = document.getElementById("3");
+const button4El = document.getElementById("4");
 
 button1El.addEventListener("click", func1);
 button2El.addEventListener("click", func2);
 button3El.addEventListener("click", func3);
+button4El.addEventListener("click", func4);
 
 // Задание 1
 //  Выполните задание,  используя методы   
@@ -108,21 +110,17 @@ function func2() {
     });
     console.log(arr);
 
-    arr = arr.sort( function(a,b) {
-        if (a < b) return 1;
-        if (a = b) return 0;
-        if (a > b) return -1;
-    });
+    arr = arr.sort( (a,b) => a - b );
     console.log(arr);
 
     arr.reverse();
     console.log(arr);
 
     let compositionItem = arr.reduce( (previousValue, item) => 
-        previousValue *= item);
+        {previousValue *= item},1);
     console.log(compositionItem);
    
-    let averageArray = arr.reduce ( (sum, item) => sum + item);
+    let averageArray = arr.reduce ( (sum, item) => {sum + item},1);
     console.log( averageArray/arr.length)
 }
 
@@ -141,12 +139,24 @@ function func3() {
     let sentence = prompt("Введите предложение");
 
     function word(x) { 
-        let arr = x.split(" ").sort( (a,b) => {
-            if(a > b) return 1; 
-            if(a == b) return 0;
-            if(a < b) return -1
-         } ).join(" ");
+        let arr = x.split(" ").sort( (a,b) => a-b).join(" ");
         return arr           
     }
      console.log( word(sentence) );
+}
+
+// на Палиндром;
+
+function func4() {
+    
+    const palindrom = prompt("Введите слово");
+
+    function retPalindrom(str) {
+        if(str == str.split("").reverse().join("")){
+            console.log("Палиндром");
+        } else  console.log("Нет");
+    
+    }
+    // console.log(palindrom.split("").reverse());
+    retPalindrom(palindrom);
 }
