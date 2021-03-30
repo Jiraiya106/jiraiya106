@@ -157,6 +157,5 @@ function func4() {
         } else  console.log("Нет");
     
     }
-    // console.log(palindrom.split("").reverse());
     retPalindrom(palindrom);
 }
