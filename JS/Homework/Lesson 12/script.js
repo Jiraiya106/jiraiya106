@@ -5,8 +5,8 @@ const button4El = document.getElementById("4");
 
 button1El.addEventListener("click", func1);
 button2El.addEventListener("click", func2);
-// button3El.addEventListener("click", func3);
-// button4El.addEventListener("click", func4);
+button3El.addEventListener("click", func3);
+button4El.addEventListener("click", func4);
 
 
 // Задание 1.
@@ -65,3 +65,58 @@ function func2() {
     let santimMonitors = Object.fromEntries( Object.entries(monitors).map( ([key, value]) => [key, 2.54 * value]));
     console.log(santimMonitors);
 }
+
+// Задание 3
+// Дан объект:
+// let user = {
+// display:  “1440×900”,
+// JavaScript:  “Да”,
+// Flash: “32.0”,
+// OS: “Windows8”,
+// };
+// Напишите деструктурирующее присваивание, которое:
+// свойство display присвоит в переменную myDisplay
+// свойство OS присвоит в переменную myOS.
+// свойство c присвоит в переменную myBrowser 
+// (Если нет такого свойства, то “Google chrome” по умолчанию);
+
+function func3() {
+
+    const user = {
+    display:  "1440×900",
+    JavaScript:  "Да",
+    Flash: "32.0",
+    OS: "Windows8",
+    };
+
+    let {
+        display: myDisplay,
+        JavaScript,
+        OS: myOS,
+        browser: myBrowser = "Google chrome",
+     } = user;
+
+     console.log(`
+    myDisplay: ${myDisplay},
+    myOS: ${myOS}, 
+    myBrowser: ${myBrowser}, 
+    JavaScript: ${JavaScript}`);
+}
+
+// Задание 4
+// В массиве содержатся результаты  6  замеров скорости входящего интернет соединения.
+// let speed=[9.73, 9.68, 9.71, 9.74, 9.72, 9.75];
+// Напишите деструктурирующее присваивание, которое:
+// Переменным max1, max2  и max3   присваивает три максимальные по величине значения из этого массива.
+// В массив rest заносит оставшиеся значения скорости.
+ 
+
+function func4() {
+
+    let speed=[9.73, 9.68, 9.71, 9.74, 9.72, 9.75];
+
+    speed = speed.sort( (a,b) => a - b).reverse();
+    [max1, max2, max3, ...rest] = speed;
+
+    console.log(max1, max2, max3, rest);
+ }
