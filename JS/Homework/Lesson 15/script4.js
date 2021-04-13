@@ -25,7 +25,7 @@ tbodyList.append(tbodyListClone);
 
 tbodyList.insertAdjacentElement("beforeend", tbodyListClone);
 
-tbodyList.insertAdjacentHTML("afterbegin", "<tr id='start'><td><td colspan = 31>График дежурств сотрудников на август 2020</tr>");
+tbodyList.insertAdjacentHTML("afterbegin", "<tr id='start'><td></td><td colspan = 31>График дежурств сотрудников на август 2020</td></tr>");
 
 document.getElementById("start").style.backgroundColor = "yellow";
 let violetId = document.querySelectorAll("#violet")[1].style.backgroundColor = "yellow";
