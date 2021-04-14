@@ -41,7 +41,8 @@ function func1() {
                             } else clearTimeout(); 
                            
                         }, 1000, from, to);
-                    } if(countdown == false) {alert("Давайте начнем с начала"); 
+                    } if(countdown == false) {
+                            alert("Давайте начнем с начала"); 
                             func1()
                         }
             } else {
@@ -49,7 +50,7 @@ function func1() {
                     console.log(a);
                     if(a < b){
                         a += 1;
-                        setTimeout( up, 1000, a, b )
+                        setTimeout( up, 1000, a, b );
                     } else clearTimeout(); 
                    
                 }, 1000, from, to);
@@ -68,26 +69,29 @@ function func1() {
                 let countdown = confirm("Ваше первое число больше второго! Мы будем считать в обратную сторону?");
                     if (countdown == true){
                        let interValDown = setInterval(function down() {
-                            if(from < to){
+                            if(from < to) {
                                clearInterval(interValDown);
-                            } else {console.log(from); 
-                                    from -= 1;}
+                            } else {
+                                console.log(from); 
+                                from -= 1;
+                            }
                         }, 1000, from, to);
-                    } if(countdown == false) {alert("Давайте начнем с начала"); 
-                            func1()
+                    } if(countdown == false) {
+                            alert("Давайте начнем с начала"); 
+                            func1();
                         }
             } else {
                 let interValUp = setInterval(() => {
                     
-                    if(from > to){
+                    if(from > to) {
                       clearInterval(interValUp);  
                     } else {console.log(from); 
                             from += 1;} 
                 }, 1000, from, to);
             }
         } else {
-            alert("Вы ввели НЕ число. Начнем с начала. Введите именно ЧИСЛО!!! ")
-            func1()
+            alert("Вы ввели НЕ число. Начнем с начала. Введите именно ЧИСЛО!!!");
+            func1();
         }
     }
 
@@ -103,7 +107,7 @@ function func1() {
             function(){
                 let d = new Date();
                 document.getElementById("clock").innerHTML = d.toLocaleTimeString();
-            }
+            }, 1000
         )
     }
 
